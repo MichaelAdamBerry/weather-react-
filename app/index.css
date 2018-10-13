@@ -1,0 +1,161 @@
+body {
+  background-color: oldlace;
+  font-family: -apple-system,BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+.home {
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.dayContainer {
+  display: grid;
+  height: 80vh;
+  width: 70vh;
+  margin: auto;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px, solid, rgba(0, 0, 0, 43);
+  font-size: 16px;
+  width: 80%;
+}
+
+.form label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.button {
+  color: black;
+  background: #ddd;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+.button:hover:enabled {
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+
+.weatherButtons {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-top: 10%;
+}
+
+.day {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  width: 50%;
+  height: 60vh;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 10% 10% 30% 10% 20%;
+  grid-template-columns: 25% 50% 25%;
+
+}
+.day:hover {
+  opacity: 1;
+  zoom: 1;
+}
+
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+  background: #ddd;
+
+}
+
+.city {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: center;
+  font-size: 130%;
+}
+
+.date {
+  grid-column: 1 / span 3;
+  align-self: center;
+  justify-self: center;
+  font-size: 160%;
+}
+.time {
+  justify-self: center;
+  grid-column: 2 / 3;
+  font-size: 130%;
+  align-self: center;
+  font-weight: bold;
+}
+
+.weatherIcon {
+  height: 100px;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.temp {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  align-self: center;
+  justify-self: center;
+  font-size: 200%;
+}
+
+  .description {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    align-self: center;
+    justify-self: center;
+    font-size: 130%;
+    margin-bottom: 30%;
+
+  }
+
+  .titleBar {
+
+  }
+
+
+body {
+  height: 100%;
+}
+
+.scrollingItem {
+  display: inline-block;
+}
+
+.scrollingWrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
